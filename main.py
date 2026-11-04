@@ -76,6 +76,9 @@ app.add_middleware(GZipMiddleware, minimum_size=500_000)
 
 register_exception_handlers(app)  # C1.2 - format chuan {error_code, message, session_id}
 
+# Moi router dung chung prefix /api/v1: khi can doi contract (v2) chi them nhom
+# include moi voi prefix khac, FE dang goi v1 khong bi vo trong luc chuyen doi.
+
 app.include_router(stations.router, prefix="/api/v1", tags=["stations"])
 app.include_router(cr.router, prefix="/api/v1", tags=["cr"])
 app.include_router(sse.router, prefix="/api/v1", tags=["sse"])
