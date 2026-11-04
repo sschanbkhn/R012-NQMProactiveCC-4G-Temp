@@ -1,0 +1,71 @@
+.env
+__pycache__/
+*.pyc
+venv/
+*.log
+docs/logs/netact_runs/
+
+# Thu muc STAGING TAM tren may dev de gom wheel truoc khi mang sang server.
+# KHONG dua vao git vi:
+#   - Server production offline lay package tu
+#     /home/auto/Python_Project/Package/python_packages/ CHU KHONG tu repo
+#     (server offline) - wheel nam trong repo khong phuc vu duong deploy nao.
+#   - ~20 MB binary vao git se nang repo VINH VIEN: git giu nguyen moi blob
+#     trong history, xoa file o commit sau KHONG lam nho lai, phai viet lai
+#     history (rewrite) moi go duoc.
+# DEPLOY: khi them dependency moi, copy tay wheel sang thu muc package cua
+# server - xem muc DEPLOY trong docs/DEV_LOG.md.
+wheels/
+
+# Bundle deploy dong goi TAM de mang sang server (adapters_bundle.tar.gz,
+# deploy_bundle.tar.gz...) - KHONG PHAI MA NGUON, chi la ban nen cua chinh cac
+# file da co trong repo.
+# CUNG LY DO voi wheels/ o tren: binary vao git la nang repo VINH VIEN - git
+# giu nguyen moi blob trong history, xoa file o commit sau KHONG lam repo nho
+# lai, phai viet lai history (rewrite) moi go duoc.
+# Truoc khi co dong nay, 2 file bundle nam untracked va `git add -A` se nuot
+# ca vao commit ma khong ai de y.
+*.tar.gz
+
+# Tile OSM tai ve cho ban do offline (scripts/download_osm_tiles.py).
+# ~89.000 file PNG / 1.3 GB - la DU LIEU TAI VE, khong phai ma nguon: chay lai
+# script la co lai. CUNG LY DO voi wheels/ va *.tar.gz o tren - binary vao git
+# la nang repo VINH VIEN.
+# Tile khong di theo git: nen lai, mang tay sang .197, dat o /home/auto/osm-tiles/
+# Dung osm_tiles*/ (co dau *) chu KHONG chi osm_tiles/: script nhan --output tuy
+# y nen thuc te hay de ra thu muc thu nghiem canh ben (osm_tiles_thu/,
+# osm_tiles_z14/...). Chi chan dung 1 ten thi cac thu muc do lot luoi.
+# Dau / cuoi: chi chan THU MUC, khong dinh nham file ten osm_tiles*.
+osm_tiles*/
+
+# File nen tile de mang sang server (osm_tiles_YYYYMMDD.tar).
+# CUNG LY DO voi osm_tiles*/ o tren: 538 MB binary, la DU LIEU TAI VE
+# khong phai ma nguon. Mau osm_tiles*/ co dau / cuoi nen chi chan THU MUC,
+# file .tar lot qua -> phai them mau rieng.
+osm_tiles*.tar
+osm_tiles*.tar.gz
+
+# File VERSION do scripts/make_version.* sinh ra luc BUILD (commit hash, thoi
+# diem build, co dirty hay khong). KHONG vao git vi:
+#   - Noi dung KHAC NHAU moi lan build tren moi may -> commit vao se thanh
+#     nguon xung dot merge vinh vien, va tu no lam working tree ban (dirty=true)
+#     ngay sau khi sinh -> lan build ke tiep ghi dirty=true oan.
+#   - Gia tri cua no la MO TA ban da deploy, khong phai ma nguon: tren may dev
+#     lay tu `git log` la du, chi SERVER (khong co .git) moi can file nay.
+# File di theo BUNDLE deploy, khong di theo git. Xem docs/DEPLOY.md.
+VERSION
+
+# File export HO neighbor THAT tu NetAct (adapters/netact/data_test/) -
+# vd R012-Neighbor_HO_Analysis-<user>-...csv, ~3 trieu dong/~500MB, dung de
+# chay thu scripts/kiem_tra_thuat_toan_ho.py tren may dev. KHONG vao git:
+#   - Nang hang tram MB -> phinh to repo vinh vien, kho push/clone.
+#   - La DU LIEU HA TANG MANG THAT (ten eNB/cell/toa do thuc), khong phai
+#     fixture test nho da duoc chon loc (khac data_crr012_hni_*.csv da co
+#     san trong cung thu muc - file do NHO va la fixture, van giu trong git).
+adapters/netact/data_test/R012-Neighbor_HO_Analysis-*.csv
+
+# Cau hinh NetAct (NETACT_SERVERS_FILE, 23/10/2026) - CHUA MAT KHAU tung NA.
+# KHONG BAO GIO vao git; tren .196 dat o /home/auto/secrets/ (chmod 600).
+# Chi file mau *.example.json (password rong) duoc commit.
+*netact_servers*.json
+!netact_servers.example.json

@@ -1,0 +1,33 @@
+# .gitattributes (muc 5, 09/2026)
+# Tai sao can: repo lam tren Windows (CRLF mac dinh cua Git for Windows/
+# core.autocrlf) nhung deploy len server Linux (.196/.197) - file .sh chay
+# tren server ma dinh CRLF se loi "/bin/bash^M: bad interpreter" (ky tu \r
+# lam hong dong shebang). Chuan hoa eol NGAY TRONG GIT (khong phu thuoc cau
+# hinh core.autocrlf tung may dev) de tranh loi nay tai phat.
+
+# Mac dinh: Git tu doi (text=auto) - phan biet text/binary theo noi dung,
+# giu EOL cua he dieu hanh dev trong working tree nhung luu LF trong repo.
+* text=auto
+
+# .sh PHAI LF - chay tren Linux (server .196/.197), CRLF se
+# hong shebang nhu giai thich o tren.
+*.sh  text eol=lf
+# .ps1 PHAI CRLF - chi chay tren Windows (PowerShell may dev), giu dung quy
+# uoc file Windows-native de tranh diff nhieu dong khi mo bang editor Windows.
+*.ps1 text eol=crlf
+
+# --- Binary: KHONG normalize line ending (se lam hong noi dung nhi phan) ---
+# HIEN TAI repo CHUA co file nao thuoc cac dinh dang duoi day duoc GIT TRACK
+# (deploy_bundle*.tar.gz bi .gitignore, chua tung add) - khai bao SAN de an
+# toan neu sau nay co ai add nham/co y 1 file dang nay, khong phai cho ai
+# nho sua .gitattributes giua chung.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.xlsx binary
+*.docx binary
+*.zip  binary
+*.tar.gz binary

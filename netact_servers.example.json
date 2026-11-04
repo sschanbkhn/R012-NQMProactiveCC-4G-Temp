@@ -1,0 +1,64 @@
+{
+  "instances": {
+    "NA09": {
+      "host": "10.212.242.20",
+      "user": "thembv",
+      "password": "",
+      "noc": "NOC1"
+    },
+    "NA10": {
+      "host": "10.212.243.20",
+      "user": "thembv",
+      "password": "",
+      "noc": "NOC2"
+    },
+    "NA11": {
+      "host": "10.212.244.20",
+      "user": "thembv",
+      "password": "",
+      "noc": "NOC3"
+    },
+    "NA12": {
+      "host": "10.212.245.20",
+      "user": "thembv",
+      "password": "",
+      "noc": "NOC2"
+    },
+    "NA14": {
+      "host": "10.212.247.20",
+      "user": "thembv",
+      "password": "",
+      "noc": "NOC1"
+    }
+  },
+  "routes": {
+    "HNI|NOKIA": "NA09",
+    "DNO|NOKIA": "NA10",
+    "HCM|NOKIA": "NA10",
+    "BPC|NOKIA": "NA10",
+    "BTN|NOKIA": "NA10",
+    "LDG|NOKIA": "NA10",
+    "TNH|NOKIA": "NA10",
+    "CTO|NOKIA": "NA10",
+    "AGG|NOKIA": "NA10",
+    "BTE|NOKIA": "NA10",
+    "BDG|NOKIA": "NA10",
+    "DNI|NOKIA": "NA10",
+    "DLK|NOKIA": "NA11",
+    "GLI|NOKIA": "NA11",
+    "KTM|NOKIA": "NA11",
+    "NTN|NOKIA": "NA11",
+    "BLU|NOKIA": "NA12",
+    "CMU|NOKIA": "NA12",
+    "HUG|NOKIA": "NA12",
+    "KGG|NOKIA": "NA12",
+    "STG|NOKIA": "NA12",
+    "CBG|NOKIA": "NA14",
+    "DBN|NOKIA": "NA14",
+    "SLA|NOKIA": "NA14",
+    "HGG|NOKIA": "NA14",
+    "LCU|NOKIA": "NA14",
+    "LSN|NOKIA": "NA14",
+    "LCI|NOKIA": "NA14"
+  }
+}

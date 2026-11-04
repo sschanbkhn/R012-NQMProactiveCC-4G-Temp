@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE raml SYSTEM 'raml20.dtd'>
+<raml version="2.0" xmlns="raml20.xsd">
+  <cmData type="plan" scope="all" name="check_rsboost_cbg_08072026_check" id="PlanConfiguration( 8156 )">
+    <header>
+      <log dateTime="2026-07-08T19:46:51.000+07:00" action="created" appInfo="PlanExporter">UIValues are used</log>
+    </header>
+    <managedObject class="LNCEL_FDD" version="xL25R3_2513_101" distName="PLMN-PLMN/MRBTS-115750/LNBTS-115750/LNCEL-12/LNCEL_FDD-0" id="4153917" operation="update">
+      <p name="dlRsBoost">3dB</p>
+    </managedObject>
+    <managedObject class="LNCEL_FDD" version="xL25R3_2513_101" distName="PLMN-PLMN/MRBTS-114820/LNBTS-114820/LNCEL-11/LNCEL_FDD-0" id="4154329" operation="update">
+      <p name="dlRsBoost">3dB</p>
+    </managedObject>
+
+    <managedObject class="SIB" version="xL25R3_2513_101" distName="PLMN-PLMN/MRBTS-114820/LNBTS-114820/LNCEL-31/SIB-0" id="4153931" operation="update">
+      <p name="qrxlevmin">-130</p>
+    </managedObject>
+    <managedObject class="SIB" version="xL25R3_2513_101" distName="PLMN-PLMN/MRBTS-114820/LNBTS-114820/LNCEL-51/SIB-0" id="4193287" operation="update">
+      <p name="qrxlevmin">-130</p>
+    </managedObject>
+	
+	    <managedObject class="SIB" version="xL25R3_2513_101" distName="PLMN-PLMN/MRBTS-114848/LNBTS-114848/LNCEL-11/SIB-0" id="4193287" operation="update">
+      <p name="qrxlevmin">-130</p>
+    </managedObject>
+
+
+
+
+  </cmData>
+</raml>

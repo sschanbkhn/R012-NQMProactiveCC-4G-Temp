@@ -1,0 +1,247 @@
+{
+  "status": "success",
+  "tram_id": "111139",
+  "total_cells": 18,
+  "huongs": [
+    {
+      "huong_id": null,
+      "huong_name": "4G-STY008W12-HNI",
+      "cells": [
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-111139/LNBTS-111139/LNCEL-43",
+          "cell_name": "4G-STY008M43-HNI",
+          "priority": 1,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 16126.1031945935,
+          "coverage_pct": 33.33
+        },
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-114354/LNBTS-114354/LNCEL-11",
+          "cell_name": "4G-STY079M11-HNI",
+          "priority": 2,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 1564.20182759325,
+          "coverage_pct": 3.23
+        }
+      ]
+    },
+    {
+      "huong_id": 13,
+      "huong_name": "4G-STY008M13-HNI",
+      "cells": [
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-111139/LNBTS-111139/LNCEL-43",
+          "cell_name": "4G-STY008M43-HNI",
+          "priority": 1,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 18799.0958297132,
+          "coverage_pct": 50.0
+        }
+      ]
+    },
+    {
+      "huong_id": null,
+      "huong_name": "4G-STY008W15-HNI",
+      "cells": [
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-111139/LNBTS-111139/LNCEL-42",
+          "cell_name": "4G-STY008M42-HNI",
+          "priority": 1,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 112587.375281652,
+          "coverage_pct": 83.33
+        },
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-114354/LNBTS-114354/LNCEL-12",
+          "cell_name": "4G-STY079M12-HNI",
+          "priority": 2,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 23457.344240837,
+          "coverage_pct": 17.36
+        }
+      ]
+    },
+    {
+      "huong_id": null,
+      "huong_name": "4G-STY008W52-HNI",
+      "cells": [
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-111139/LNBTS-111139/LNCEL-42",
+          "cell_name": "4G-STY008M42-HNI",
+          "priority": 1,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 42193.9270590507,
+          "coverage_pct": 83.33
+        }
+      ]
+    },
+    {
+      "huong_id": 53,
+      "huong_name": "4G-STY008M53-HNI",
+      "cells": [
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-111139/LNBTS-111139/LNCEL-43",
+          "cell_name": "4G-STY008M43-HNI",
+          "priority": 1,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 19650.2688598723,
+          "coverage_pct": 50.0
+        }
+      ]
+    },
+    {
+      "huong_id": null,
+      "huong_name": "4G-STY008W55-HNI",
+      "cells": [
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-111139/LNBTS-111139/LNCEL-42",
+          "cell_name": "4G-STY008M42-HNI",
+          "priority": 1,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 90069.9513907612,
+          "coverage_pct": 66.67
+        },
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-114354/LNBTS-114354/LNCEL-12",
+          "cell_name": "4G-STY079M12-HNI",
+          "priority": 2,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 18721.3197383924,
+          "coverage_pct": 13.86
+        }
+      ]
+    },
+    {
+      "huong_id": null,
+      "huong_name": "4G-STY008W32-HNI",
+      "cells": [
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-111139/LNBTS-111139/LNCEL-43",
+          "cell_name": "4G-STY008M43-HNI",
+          "priority": 1,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 16126.1031945935,
+          "coverage_pct": 33.33
+        },
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-114354/LNBTS-114354/LNCEL-11",
+          "cell_name": "4G-STY079M11-HNI",
+          "priority": 2,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 1564.20182759325,
+          "coverage_pct": 3.23
+        }
+      ]
+    },
+    {
+      "huong_id": null,
+      "huong_name": "4G-STY008W35-HNI",
+      "cells": [
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-111139/LNBTS-111139/LNCEL-42",
+          "cell_name": "4G-STY008M42-HNI",
+          "priority": 1,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 22517.5068047279,
+          "coverage_pct": 16.67
+        },
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-114354/LNBTS-114354/LNCEL-12",
+          "cell_name": "4G-STY079M12-HNI",
+          "priority": 2,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 2335.73751428362,
+          "coverage_pct": 1.73
+        }
+      ]
+    },
+    {
+      "huong_id": null,
+      "huong_name": "4G-STY008W51-HNI",
+      "cells": [
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-111139/LNBTS-111139/LNCEL-41",
+          "cell_name": "4G-STY008M41-HNI",
+          "priority": 1,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 2826.43389496909,
+          "coverage_pct": 16.67
+        }
+      ]
+    },
+    {
+      "huong_id": null,
+      "huong_name": "4G-STY008W31-HNI",
+      "cells": [
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-111139/LNBTS-111139/LNCEL-41",
+          "cell_name": "4G-STY008M41-HNI",
+          "priority": 1,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 2826.43389496909,
+          "coverage_pct": 16.67
+        }
+      ]
+    },
+    {
+      "huong_id": null,
+      "huong_name": "4G-STY008W14-HNI",
+      "cells": [
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-111139/LNBTS-111139/LNCEL-41",
+          "cell_name": "4G-STY008M41-HNI",
+          "priority": 1,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 10749.4255699063,
+          "coverage_pct": 16.67
+        }
+      ]
+    },
+    {
+      "huong_id": null,
+      "huong_name": "4G-STY008W54-HNI",
+      "cells": [
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-111139/LNBTS-111139/LNCEL-41",
+          "cell_name": "4G-STY008M41-HNI",
+          "priority": 1,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 10749.4255699063,
+          "coverage_pct": 16.67
+        }
+      ]
+    },
+    {
+      "huong_id": null,
+      "huong_name": "4G-STY008W11-HNI",
+      "cells": [
+        {
+          "cell_id": "PLMN-PLMN/MRBTS-111139/LNBTS-111139/LNCEL-41",
+          "cell_name": "4G-STY008M41-HNI",
+          "priority": 1,
+          "technology": "4G",
+          "status": "active",
+          "overlap_area": 2826.43389496909,
+          "coverage_pct": 16.67
+        }
+      ]
+    }
+  ]
+}

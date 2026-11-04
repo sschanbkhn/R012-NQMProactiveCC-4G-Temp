@@ -1,0 +1,29 @@
+fastapi
+uvicorn
+sqlmodel
+alembic
+paramiko
+httpx
+asyncpg
+python-dotenv
+pytest
+pytest-asyncio
+# JOB TU DONG buoc 3/4 - ghim <4 vi APScheduler 4.x viet lai API hoan toan
+# (AsyncScheduler, khong con AsyncIOScheduler/misfire_grace_time nhu ban 3.x).
+# tzlocal + tzdata la dependency keo theo, CAN cho timezone="Asia/Ho_Chi_Minh"
+# (may server khong co san tz database - xem C1.4-fix8).
+apscheduler<4
+
+# BO CDS, thay bang HO (handover) that + Delaunay (quyet dinh 06-08/10/2026,
+# yeu cau truc tiep user) - domain/services/ho_delaunay.py can scipy.spatial
+# (Delaunay, cKDTree) + numpy. GHIM DUNG BAN da cai/kiem tren server .196 (va
+# tren may dev luc viet tinh nang nay) - tranh lech hanh vi Delaunay/qhull
+# giua cac phien ban (vd thay doi cach xu ly diem suy bien).
+numpy==2.5.0
+scipy==1.18.1
+
+# Xuat Excel hau kiem (GET /hau-kiem/excel, 18/10/2026). GHIM ban - server .196
+# cai offline tu wheel: openpyxl-3.1.5-py2.py3-none-any.whl +
+# et_xmlfile-2.0.0-py3-none-any.whl (phu thuoc duy nhat cua openpyxl).
+openpyxl==3.1.5
+et-xmlfile==2.0.0
